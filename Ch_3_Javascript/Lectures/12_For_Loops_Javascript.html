@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Javascript</title>
+
+  <style>
+
+
+  </style>
+</head>
+
+<body>
+    <div id="tweetDiv"></div>
+
+    <script type="text/javascript">
+        //should always give variables a value, as will show up as undefined otherwise. can see by removing ="" in varstring.
+        var tweetString = "";
+        var tweets = ["hi everyone", "i love cornflakes", "night night"];
+
+        for(var i = 0; i < tweets.length; i++){
+
+              tweetString = tweetString + "<p>" + tweets[i] + "</p>"
+        }
+
+        document.getElementById("tweetDiv").innerHTML = tweetString;
+    </script>
+
+</body>
+
+</html>

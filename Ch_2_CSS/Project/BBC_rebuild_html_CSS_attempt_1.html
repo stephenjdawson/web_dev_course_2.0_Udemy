@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body {margin: 0;}
+
+  ul.topnav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+  }
+
+  ul.topnav li {float: left;}
+
+  ul.topnav li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+
+  ul.topnav li a:hover:not(.active) {background-color: #4CAF50;}
+
+  ul.topnav li a.active {background-color: #4CAF50;}
+
+  ul.topnav li.right {float: right;}
+
+  .dropdown:hover {
+      background-color: black;
+  }
+
+  li.dropdown {
+      display: inline-block;
+  }
+
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+  </style>
+</head>
+<body>
+  <!--Top Nav Bar-->
+  <ul class="topnav">
+    <li><a class="active" href="#home"><img src="bbc_logo.png"></a></li>
+    <li><a id="idcta-link" href="https://ssl.bbc.com/id/signin?ptrt=http%3A%2F%2Fwww.bbc.com%2Fnews%2Ftechnology"> <span id="idcta-username">Sign in</span> </a></li>
+    <li><a href="#News">News</a></li>
+    <li><a href="#Sports">Sport</a></li>
+    <li><a href="#Weather">Weather</a></li>
+    <li><a href="#Shop">Shop</a></li>
+    <li class="dropdown"><a href="#More" class="dropbtn">More</a>
+      <div class="dropdown-content">
+        <a style="color:black" href="#">Link 1</a>
+        <a style="color:black" href="#">Link 2</a>
+        <a style="color:black" href="#">Link 3</a>
+      </div>
+    </li>
+    <li class="right"><a href="#Search"><input id="orb-search-q" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" name="q" placeholder="Search"><button id="orb-search-button" class="orb-search__button">Search the BBC</button></a></li>
+  </ul>
+
+  <!--Red Nav Bar-->
+
+ <!--body-->
+ <div style="padding:0 16px;">
+   <h2>Responsive Topnav Example</h2>
+   <p>This example use media queries to stack the topnav vertically when the screen size is 600px or less.</p>
+   <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+   <h4>Resize the browser window to see the effect.</h4>
+ </div>
+</body>
+</html>

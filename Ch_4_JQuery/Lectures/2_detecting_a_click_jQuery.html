@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>jQuery</title>
+  <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+
+  <style>
+
+    .circle.green{
+      float:left;
+      margin:20px;
+      height:40px;
+      width:40px;
+      border-radius: 20px;
+      background-color: green;
+    }
+
+    .square.red{
+      float: left;
+      margin: 20px;
+      height:40px;
+      width:40px;
+      background-color: red;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+      <div class="circle green">
+      </div>
+
+      <div class="square red">
+      </div>
+
+      <div class="square red">
+      </div>
+
+    </div>
+
+    <script type="text/javascript">
+
+      /* $(".circle").click(function(){
+            alert("circle was clicked.");
+      })
+
+      $(".square").click(function(){
+            alert("square was clicked.");
+      }) */
+
+      $("div").click(function(){
+            alert("A div was clicked.");
+      })
+
+      </script>
+</body>
+
+</html>

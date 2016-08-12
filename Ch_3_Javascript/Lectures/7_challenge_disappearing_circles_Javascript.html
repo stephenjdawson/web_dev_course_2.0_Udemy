@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Javascript</title>
+
+  <style>
+
+    #blueCircle{
+      float:left;
+      position:relative;
+      top: 100px;
+      margin: 50px;
+      height:100px;
+      width:100px;
+      background-color: blue;
+      border:2px solid blue;
+      border-radius: 50px;
+    }
+
+    #redCircle{
+      float:left;
+      position: relative;
+      top: 100px;
+      margin: 50px;
+      height:100px;
+      width:100px;
+      background-color: red;
+      border:2px solid red;
+      border-radius: 50px;
+    }
+
+    #yellowCircle{
+      float:left;
+      position:relative;
+      top: 100px;
+      margin: 50px;
+      height:100px;
+      width:100px;
+      background-color: yellow;
+      border:2px solid yellow;
+      border-radius: 50px;
+    }
+
+    .circleText{
+      position:relative;
+      left:20px;
+      top:25px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="blueCircle">
+    <p class="circleText">Click Me</p>
+  </div>
+
+  <div id="redCircle">
+    <p class="circleText">Click Me</p>
+  </div>
+
+  <div id="yellowCircle">
+    <p class="circleText">Click Me</p>
+  </div>
+
+    <script type="text/javascript">
+
+    document.getElementById("blueCircle").onclick = function (){
+
+      document.getElementById("blueCircle").style.display = "none";
+    }
+
+    document.getElementById("redCircle").onclick = function (){
+
+      document.getElementById("redCircle").style.display = "none";
+    }
+
+    document.getElementById("yellowCircle").onclick = function (){
+
+      document.getElementById("yellowCircle").style.display = "none";
+    }
+
+
+
+
+    </script>
+</body>
+
+</html>

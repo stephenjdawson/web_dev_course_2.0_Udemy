@@ -1,0 +1,185 @@
+   #topbar {
+      width:1000px ;
+      margin: 0 auto;
+      height: 35px;
+    }
+
+    .topbar-section{
+      float:left;
+      border-left:1px #CCCCCC solid;
+      height:100%;
+    }
+
+    .topbar_text{
+      font-family:Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 14px;
+      position:relative;
+      top: 10px;
+      padding: 8px;
+    }
+
+    #title_news{
+      width: inherit;
+      margin: 0 auto;
+      background-color: #BB1919;
+      height: 80px;
+    }
+
+    #title_text_div {
+      width: 1025px;
+      margin: 0 auto;
+      background-color: #BB1919;
+    }
+
+    #title_news_text{
+      color: white;
+      font-family:Arial, Helvetica, sans-serif;
+      font-size: 40px;
+      position:relative;
+      top:5px;
+      padding: 10px;
+    }
+    #midbar {
+      width:1018px;
+      margin: 0 auto;
+      height: 35px;
+      background-color: #A91717;
+    }
+
+    #midbarbkgrd{
+      width:inherit;
+      background-color: #A91717;
+
+    }
+
+    .midbar-section {
+      float:left;
+      border-right:.6667px #F1F1F1 solid;
+      height:50%;
+      position:relative;
+      top:10px;
+    }
+
+    .midbar_text {
+      font-family:Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      color: white;
+      padding: 8px;
+    }
+
+    #tech_title_div {
+      width:1018px;
+      margin: 0 auto;
+      height: 35px;
+    }
+
+    #tech_page_div {
+      width:inherit;
+      background-color: white;
+    }
+
+    #tech_title {
+      width: 105px;
+      font-family: helvetica, arial, sans-serif;
+      font-size: 20px;
+      font-weight: lighter;
+      color: rgb(64, 64, 64);
+      border-bottom: 3px solid #BB1919;
+    }
+
+    #front_page_div {
+      width:inherit;
+      background-color: white;
+    }
+
+    #front_page_content {
+      width:1018px;
+      margin: 0 auto;
+      height: 325px;
+      border-bottom: 0.5px solid rgb(104,104,104);
+
+    }
+
+    #front_page_tech_title {
+      color: rgb(104, 104, 104);
+      font-size: 185%;
+    }
+
+    #front_page_article {
+      width: 200px;
+      font-size: 14px;
+      padding-right: 20px;
+      position: relative;
+      top: -10px;
+      color: rgb(104, 104, 104);
+      float:left;
+    }
+
+    #test_filler{
+      position: relative;
+      top: 10px;
+      left: -625px;
+    }
+
+    body {
+      margin:0;
+      padding:0;
+      font-family:Helvetica, Arial, sans-serif;
+    }
+
+    a{
+      color: inherit;
+      text-decoration: none;
+    }
+
+    #logo{
+      margin-top:8px;
+      width:80px;
+      float:left;
+      margin-right:8px;
+    }
+
+    #signin_image {
+      width:20px;
+      margin:12px 15px;
+      float:left;
+    }
+
+    #signin_text {
+      font-weight:bold;
+      font-size:90%;
+      position:relative;
+      top:14px;
+      padding-right: 8px;
+    }
+
+    .drpdwn_arrow_top{
+      width:10px;
+      padding-right: 10px;
+      position: relative;
+      top:10px;
+    }
+
+    .drpdwn_arrow_mid{
+      width:10px;
+      padding-right: 10px;
+    }
+
+    input[type=text] {
+        height: 30px;
+        width: 130px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url('images/magnifying-glass.png');
+        background-size: 20px;
+        background-position: 5px 5px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        margin:2.5px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+    }

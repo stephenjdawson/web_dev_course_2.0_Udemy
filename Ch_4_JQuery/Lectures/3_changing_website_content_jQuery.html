@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>jQuery</title>
+  <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+
+  <style>
+
+    .circle.green{
+      margin:20px;
+      height:40px;
+      width:40px;
+      border-radius: 20px;
+      background-color: green;
+    }
+
+    .square.red{
+      margin: 20px;
+      height:40px;
+      width:40px;
+      background-color: red;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+      <div class="circle green">
+      </div>
+
+      <iframe src="http://www.cnn.com"></iframe>
+
+
+
+    </div>
+
+    <script type="text/javascript">
+
+
+
+    /* Changes html of an element  $(".circle").click(function() {
+          $("p").html("This text has changed");
+      }); */
+
+/* gets html of an element
+      $(".circle").click(function() {
+          alert($("p").html());
+      }); */
+
+/*gets hmtl element when hover
+    $(".circle").hover(function(){
+          alert($("p").html());
+    }); */
+
+    $(".circle").hover(function(){
+        $("iframe").attr("src", "http://www.ecowebhosting.co.uk");
+    });
+
+    </script>
+
+</body>
+
+</html>

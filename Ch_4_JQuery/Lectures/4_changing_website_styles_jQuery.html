@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>jQuery</title>
+  <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+
+  <style>
+
+    .circle.green{
+      margin:20px;
+      height:40px;
+      width:40px;
+      border-radius: 20px;
+      background-color: green;
+    }
+
+    .square.red{
+      margin: 20px;
+      height:40px;
+      width:40px;
+      background-color: red;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+
+
+      <div class="circle green">
+      </div>
+
+      <div class="square red">
+      </div>
+
+      <div class="square red">
+      </div>
+
+
+
+
+
+    <script type="text/javascript">
+
+  /* will change property    $(".circle").click(function(){
+            $(".circle").css("background-color", "red");
+      });
+    */
+/* will return background-color
+    $(".circle").click(function(){
+        alert($(".circle").css("background-color"));
+    });
+  */
+
+      $(".circle").click(function(){
+            alert($("body").css("width"));
+      });
+
+      $("div").click(function(){
+          $(this).css("display", "none");
+          alert("you clicked on a: " + $(this).attr("class"));
+      });
+
+      //in lecture uses ID and Class, uses if statement to discern what was clicked.
+
+
+    </script>
+
+</body>
+
+</html>

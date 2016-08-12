@@ -1,0 +1,42 @@
+
+    #information{
+      position: fixed;
+      top:0;
+      left:0;
+      width: 100%;
+      height:18%;
+      padding: 0;
+      margin: 0;
+      background-color: #538093;
+    }
+
+    #infoContent{
+      position: relative;
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    #shapeBackground{
+      width: 100%;
+      height: 82%;
+      position: fixed;
+      top: 18%;
+      left:0%;
+      background-color: #C2CEDA;
+    }
+
+    #shapePlayground{
+      width: 80%;
+      margin: 0 auto;
+      height:80%;
+    }
+
+    #shape{
+      position: absolute;
+      top: 20%;
+      left: 20%;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      background-color: blue;
+    }

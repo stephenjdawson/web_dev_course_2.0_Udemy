@@ -1,0 +1,11 @@
+//Function to test if jQuery is installed properly
+
+function testjQuery(){
+      if(typeof jQuery == "undefined"){
+          alert("jQuery is not installed.");
+        }else {
+          alert("jQuery is installed correctly.");
+        }
+      }
+
+//

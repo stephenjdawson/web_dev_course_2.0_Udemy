@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>jQuery</title>
+  <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+
+  <style>
+
+    .circle.green{
+      margin:20px;
+      height:40px;
+      width:40px;
+      border-radius: 20px;
+      background-color: green;
+    }
+
+    .square.red{
+      margin: 20px;
+      height:40px;
+      width:40px;
+      background-color: red;
+    }
+
+    #two{
+      display:none;
+    }
+  </style>
+
+</head>
+
+<body>
+
+    <p id="text"> This is a paragraph </p>
+    <button id="toggle">Click one</button>
+
+
+<!-- first part of lecture     <div class="circle green">
+      </div>
+
+      <div class="square red">
+      </div>
+
+      <div class="square red">
+      </div>
+
+
+
+
+    <script type="text/javascript">
+
+      $("div").click(function(){
+          $(this).fadeOut("slow",function(){
+            alert("fadeout has finished!");
+          });
+      });
+
+    </script> -->
+    <script type="text/javascript">
+
+/* if style toggle
+
+    $("#toggle").click(function(){
+        if ($("#text").css("display") == "none"){
+                $("#text").fadeIn();
+        }
+        else {
+              $("#text").fadeOut();
+              }
+      });
+  */
+
+  var c=0;
+  $("#toggle").click(function(){
+    if (c==0){
+      $("#text").fadeOut();
+      c++;
+    }else {
+      $("#text").fadeIn();
+      c--;
+    }
+
+  });
+
+
+
+
+    </script>
+
+</body>
+
+</html>

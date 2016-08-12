@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Javascript</title>
+
+  <style>
+
+
+  </style>
+</head>
+
+<body>
+    <p id="text">This is some text</p>
+    <input id="input" type="text" placeholder="Input">
+    <button id="changeText">Click to change text</button>
+
+    <script type="text/javascript">
+
+
+      //  var x = 5;
+
+        // x=20;    variable value change
+
+      //  var name = "Stephen"    string variable
+
+      //  alert(x);
+
+      document.getElementById("changeText").onclick = function(){
+            var x ="";
+            x = document.getElementById('input').value;
+            document.getElementById("text").innerHTML = x;
+      }
+
+    </script>
+
+</body>
+
+</html>

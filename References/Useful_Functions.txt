@@ -8,4 +8,61 @@ function testjQuery(){
         }
       }
 
-//
+//Email validation jQuery
+
+function isEmail(email) {
+  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  return regex.test(email);
+}
+
+//Homemade prime checker:
+
+while($_GET['number'] != NULL){
+    
+$_GET['number'] = $number;
+   
+if(is_int($number) == true){
+      
+for($i = 2; $i < $number; $i++){
+        
+$number/$i = $check;
+        
+if(is_int($check) == true){
+          
+$i = $number;
+          
+$isIt = " is not";
+        
+}else{
+          
+$i++;
+        
+}
+      
+}
+    
+}else{
+      
+$isIt = " is not";
+    
+}
+  
+}
+
+
+while(isset($_GET['number'])){
+  if($_GET['number'] == 1 || $_GET['number'] == 2 || $_GET['number'] == 3){
+    echo "Your number: ".$_GET['number'].", is a prime number!";
+    unset($_GET['number']);
+  }elseif(ctype_digit($_GET['number'])){
+    $number = $_GET['number'];
+          for($i = 2; $i < $number; $i++){
+            echo "fuck you";
+          //  unset($_GET['number']);
+        }
+      }else{
+        echo "not today";
+        unset($_GET['number']);
+
+        }
+  }

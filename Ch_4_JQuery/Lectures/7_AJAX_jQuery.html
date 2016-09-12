@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 
-  <title>jQuery</title>
+  <title>AJAX</title>
 
   <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
   <!-- AJAX can't be worked with on local files -->
@@ -16,9 +16,22 @@
 
 <body>
 
+  <p></p>
 
     <script type="text/javascript">
+/* get command does not give option if fails
+        $.get("info.txt", function(data){
+              alert(data);
+        });
+*/
 
+        $.ajax("info.txt")
+            .done(function(data){
+                $("p").html(data);
+        })
+            .fail(function(){
+                alert("Could not get data");
+        });
 
     </script>
 

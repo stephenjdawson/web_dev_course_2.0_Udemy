@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>jQuery UI Draggable - Default functionality</title>
+
+    <link src="jquery-ui-1.12.0\jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <style type="text/css">
+
+      #resizable span { text-align: center; margin: 0; }
+      #resizable {width:400px; height:300px; background-color:green; padding: 0.5em;}
+      #also { width: 100px; height:100px; background-color: red }
+
+    </style>
+
+    <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="jquery-ui-1.12.0\jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+
+</head>
+
+
+<body>
+
+  <div id="draggable" class="ui-widget-content">
+    <p>Drag Me Horizontally!</p>
+  </div>
+
+  <div id="resizable" class="ui-widget-content">
+    <span class="ui-widget-span">I'm contained within my parent</span> <!-- a paragraph tag naturally extends whole width of page, so would only be draggable vertically if used instead of span-->
+  </div>
+
+  <div id="also"></div>
+
+  <script type="text/javascript">
+
+  $(function() {
+    $("#draggable").draggable({axis: "x"});
+    $("#resizable").resizable({
+      grid:50,
+      alsoResize: "#also",
+      resize: function(event, ui){
+        if ( $("#resizable").width() > 600){
+              alert("big enough")
+        }
+    }
+  });
+    $("#also").resizable();
+    $("span").draggable({containment: "parent"});
+  });
+
+  </script>
+
+</body>
+
+</html>

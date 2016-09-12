@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Code Player</title>
+  <link rel="stylesheet" type="text/css" href="code_player.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+
+    </style>
+
+
+</head>
+
+
+<body>
+
+  <nav class="navbar  navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a id="navbar-title" class="navbar-brand" href="#">Code Player</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li id="html-toggle"><a><strong>HTML</strong></a></li>
+          <li id="css-toggle"><a><strong>CSS</strong></a></li>
+          <li id="js-toggle"><a><strong>JavaScript</strong></a></li>
+          <li id="output-toggle"><a><strong>Output</strong></a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="container">
+
+    <div class="contained" id="html-section">
+      <h6 class="contained-header"><strong>HTML</strong></h6>
+      <button id="update-html">Update</button>
+      <textarea class="code-input" id="html-input">
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Code Player</title>
+  </head>
+  <body>
+  </body>
+</html>
+      </textarea>
+    </div>
+
+    <div class="contained" id="css-section">
+      <h6 class="contained-header"><strong>CSS</strong></h6>
+      <button id="update-css">Update</button>
+      <textarea class="code-input" id="css-input"></textarea>
+
+    </div>
+
+    <div class="contained" id="js-section">
+      <h6 class="contained-header"><strong>JavaScript</strong></h6>
+      <button id="update-js">Update</button>
+      <textarea class="code-input" id="js-input"></textarea>
+    </div>
+
+    <div class="contained" id="output-section">
+      <h6 class="contained-header"><strong>Output</strong></h6>
+  <!--    <div class="code-input" id="code-output"></div>  change output to an iframe instead of a div, will handle all CSS rather than only some-->
+      <iframe class="code-input" id="code-output"></iframe>
+    </div>
+
+
+
+  </div>
+
+
+  <script type="text/javascript" src="code_player.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+.navbar{
+  background-color: #D9D9E0 !important;
+}
+
+.nav.navbar-nav li a{
+  color: #3980B7 !important;
+}
+
+
+#navbar-title {
+  color: #3980B7;
+}
+
+#container{
+  position:relative;
+  top:-21px;
+  width:100%;
+  margin: 0 auto;
+}
+
+.contained, .code-input {
+  display: none;
+  height:820px;
+  float:left;
+}
+
+
+.navbar-active{
+  background-color: yellow !important;
+}
+
+#html-section{
+  background-color: red;
+}
+
+#css-section{
+  background-color: blue;
+}
+
+#js-section{
+  background-color: yellow;
+}
+
+#output-section{
+  background-color: green;
+}
+
+textarea {
+  resize: none;
+}
+
+h6 {
+
+}
+
+.contained-header{
+  float:left;
+  margin-left: 10px;
+}
+
+#update-html, #update-css, #update-js{
+  float:right;
+  margin: 3.5px;
+}
+
+#code-output {
+  height:820px;
+  background-color: white;
+}

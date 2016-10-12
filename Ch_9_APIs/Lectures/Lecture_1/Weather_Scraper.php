@@ -3,30 +3,25 @@
 $weather = "";
 $error = "";
 
-if (array_key_exists('citySearch', $_GET)) {
+if ($_GET['citySearch']) {
 
-  $city = str_replace(' ','', $_GET['citySearch']);
+    $urlContent =  file_get_contents("http://api.openweathermap.org/data/2.5/weather?q=".urlencode($_GET['citySearch'])."&units=metric&appid=8d1ac6a698decbe4838b602089722fcd");
 
-  $file_headers = @get_headers('http://www.weather-forecast.com/locations/'.$city.'/forecasts/latest');
-    if(!$file_headers || $file_headers[0] == 'HTTP/1.1 404 Not Found') {
-    $error = "That city could not be found.";
+    $weatherArray = json_decode($urlContent, true);
 
-  }else {
+    //print_r($weatherArray);
 
-  $file = file_get_contents('http://www.weather-forecast.com/locations/'.$city.'/forecasts/latest');
-  $pageArray = explode('3 Day Weather Forecast Summary:</b><span class="read-more-small"><span class="read-more-content"> <span class="phrase">', $file);
+    if($weatherArray['cod'] == 200){
+    $weather = "The weather in ".$_GET['citySearch']." is currently '".$weatherArray['weather'][0]['description']."'. ";
 
-  if (sizeof($pageArray) > 1){
-  $secondPageArray = explode('</span></span></span>', $pageArray[1]);
-  if (sizeof($secondPageArray) > 1) {
-      $weather = $secondPageArray[0];
-    } else {
-      $error = "That city could not be found.";
-    }
-} else {
-    $error = "That city could not be found.";
-    }
+    $temp = $weatherArray['main']['temp'];
+
+    $weather .= " The temperature is ".intval($temp)."&deg;C and the wind speed is ".$weatherArray['wind']['speed']."m/s.";
+  } else {
+    $error = "Could not find city, please try again.";
+    //API is autocorrecting erroneous input. DK why
   }
+
 }
  ?>
 

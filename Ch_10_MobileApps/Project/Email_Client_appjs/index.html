@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Email Client</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="app.min.css">
+    <style>
+      /* TODO */
+    </style>
+  </head>
+
+  <body>
+    <div class="app-page" data-page="home">
+      <div class="app-topbar">
+        <div class="app-title">Email Client</div>
+      </div>
+      <div class="app-content">
+        <div class="app-section">
+          <h3>Who would you like to email?</h3>
+        </div>
+        <ul class="app-list app-section" id="fromEmailList">
+          <li>This is where</li>
+          <li>Locally Stored from Emails</li>
+          <li>Will be displayed</li>
+          <li>Have last used one auto selected</li>
+        </ul>
+        <ul class="app-list app-section" id="toEmailList">
+          <li>This is where</li>
+          <li>Locally Stored toEmails</li>
+          <li>Will be displayed</li>
+        </ul>
+        <div class="app-section">
+          <div class="app-button" data-target="emailPage">Compose Email</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="app-page" data-page="emailPage">
+      <div class="app-topbar">
+        <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">Send Email</div>
+      </div>
+      <div class="app-content">
+        <div class="app-section">
+          <input class="app-input" id="fromEmail" placeholder="Your Email Address:">
+        </div>
+        <div class="app-section">
+          <input class="app-input" id="toEmail" placeholder="Recipients Email Address:">
+        </div>
+        <div class="app-section">
+          <input class="app-input" id="subject" placeholder="Subject:">
+          <hr>
+          <textarea class="app-input" id="emailContent" placeholder="Message:"></textarea>
+        </div>
+        <div class="app-section">
+          <div class="app-button">Send</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="zepto.js"></script>
+    <script src="app.min.js"></script>
+    <script>
+      App.controller('home', function (page) {
+        // put stuff here
+      });
+
+      App.controller('emailPage', function (page) {
+        // put stuff here
+      });
+
+      try {
+        App.restore();
+      } catch (err) {
+        App.load('home');
+      }
+    </script>
+  </body>
+</html>
